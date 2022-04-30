@@ -3,6 +3,7 @@ package sm.sandy.java8inaction.ch12;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZoneId;
 
 public class DateTime1 {
     public static void main(String[] args) {
@@ -17,5 +18,7 @@ public class DateTime1 {
 
         System.out.println(ldt);
 
+        System.out.println(LocalDateTime.now());
+        System.out.println(LocalDateTime.now(ZoneId.of("America/Chicago")).toString());
     }
 }
